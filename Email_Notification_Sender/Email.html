@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body{
+      text-align: center;
+    }
+
+    .box {
+      text-align: center;
+      font-family: Arial;
+      width: 300px;
+      border: 2px ridge blue;
+      margin: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      border: 3px outset rgba(0, 0, 0, 0.8);
+      box-shadow: 4px 3px 19px 7px rgba(0, 0, 0, 0.55);
+      height: 100%;
+    }
+    
+    img {
+      width: 100px;
+    }
+
+    #header {
+      background-color: #ececec;
+      /* gray: #ececec; blue: #d2e7d6  #e8f4ea*/
+    }
+
+    #content {
+      background-color: white;
+      margin-right: auto;
+      margin-left: auto;     
+    }
+
+    #button {
+      -webkit-border-radius: 28;
+      -moz-border-radius: 5;
+      border-radius: 5px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 15px;
+      background: #ff7878;
+      padding: 8px 20px 8px 20px;
+      text-decoration: none;
+    }
+    
+     #info{
+        font-size: 14px;
+      }
+      
+      #label{
+        font-size: 15px;
+        font-weight: bold;
+      }
+  </style>
+  <base target="_top">
+</head>
+<body >
+  <div class="box" id="header">
+    <img src=
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bullhorn_font_awesome.svg/512px-Bullhorn_font_awesome.svg.png" 
+    width="180" style="margin:10px 0px"><br />
+    <h2><?= messageTitle ?></h2>
+  </div>
+  <div id="content" class="box" >
+    <h4>
+      <?= messageBody ?>
+    </h4>
+  </div>
+</body>
+
+</html>
